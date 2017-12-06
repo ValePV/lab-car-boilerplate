@@ -30,22 +30,51 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#">Viaja</a></li>
             <li><a href="#">Conduce</a></li>
-            <li><a href="#">Inicia sesión</a></li>
+            <li><a href="#modal-login" class="btn btn-primary btn-lg" data-toggle="modal" >Inicia sesión</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
+      <div class="modal fade" id="modal-login" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="mod-content modal-content">
+            <div class="modal-content-ext">
+                <img class="avatar" src="assets/images/avatar.png">
+              </div>
+            <div class="modal-content1">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Iniciar Sesion</h4>
+              </div>
+              <div class="modal-body">
+                <div class="inp-modal-loging input-group input-group-lg">
+                  <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-user" aria-hidden="true"></i></span>
+                  <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1">
+                </div>
+                <div class="inp-modal-loging input-group input-group-lg">
+                  <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                  <input type="text" class="form-control" placeholder="Password" aria-describedby="sizing-addon1">
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn-login btn btn-primary btn-lg">LOGING</button>
+              </div>
+            </div><!--/.modal-content1 -->
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+      
     </nav>
     <div class="row header-section">
       <div class="sub-section col-md-5 col-md-offset-7 hidden-sm hidden-xs">
         <h2>Disfruta del viaje <br>Eres dueño de tu tiempo</h2>
         <h4>Viaja con <img class="logo" src="assets/images/logoBlanco.png"></h4>
-        <button type="button" class="btn btn-default">REGISTRATE</button>
+        <a href="#m-register" class="btn-register btn btn-default" data-toggle="modal" >REGISTRATE</a>
         <p class="lines">
           <input class="inp-lin" type="text" name=".">
           <h5 class="tex-lin">O bien</h5>
           <input class="inp-lin" type="text" name=".">
         </p>
-        <button type="button" class="btn btn-default">Conviértete en un conductor</button>
+        <a href="#m-regis-cond" class="btn-register btn btn-default" data-toggle="modal" >Conviértete en un conductor</a>
       </div>
       <div class="sub-section col-xs-6 col-xs-offset-6 col-sm-5 col-sm-offset-7 hidden-md hidden-lg">
         <h2>Comienza a viajar</h2>
@@ -53,6 +82,104 @@
         <button type="button" class="btn btn-default">Descarga la app</button>
       </div>
     </div>
+    <div class="modal fade" id="m-register" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="mod-content1 modal-content">
+            <div class="modal-princ">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <input type="submit" value="Ya tienes una cuenta?" class="btn-notregis btn btn-info btn-block">
+              <h4 class="mod-text modal-title">O CREA UNA CUENTA NUEVA</h4>
+              <form role="form">
+                <div class="row">
+                  <div class="col-xs-6 col-sm-6 col-md-6">
+                    <div class="form-group">
+                      <input type="text" name="first_name" id="first_name" class="form-control input-sm" placeholder="Nombre">
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-6 col-md-6">
+                    <div class="form-group">
+                      <input type="text" name="last_name" id="last_name" class="form-control input-sm" placeholder="Apellido">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input type="email" name="email" id="email" class="form-control input-sm" placeholder="Correo Electronico: ejemplo@ejemplo.com">
+                </div>
+                <div class="form-group">
+                  <input type="phone" name="phone" id="phone" class="form-control input-sm" placeholder="Telefono">
+                </div>
+                <div class="form-group">
+                  <input type="password" name="password" id="password" class="form-control input-sm" placeholder="Contraseña">
+                </div>
+                <div class="form-group">
+                  <input type="city" name="city" id="city" class="form-control input-sm" placeholder="Ciudad">
+                </div>
+                <div class="form-group">
+                  <input type="optional" name="codigo" id="codigo" class="form-control input-sm" placeholder="(Opcional) Código de invitación">
+                </div>
+                <div class="form-group">
+                  <select id="disableSelec" class="form-elec form-control">
+                    <option>Como te enteraste de nosotros</option>
+                    <option>Facebook</option>
+                    <option>Google</option>
+                    <option>Otros</option>
+                  </select>
+                </div>
+                <input type="submit" value="Enviar" class="btn-send btn btn-info btn-block">
+              </form>
+            </div><!--/.modal-princi -->
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+      <div class="modal fade" id="m-regis-cond" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="mod-content1 modal-content">
+            <div class="modal-princi">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <div class="form-group">
+                <label for="disabledSelect">¿Tienes vehículo de 4 puertas?</label>
+                <select id="disabledSelect" class="form-control">
+                  <option>si</option>
+                  <option>no</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="disabledSelect">Marca</label>
+                <select id="disabledSelect" class="form-control">
+                  <option>Elige la marca del vehículo</option>
+                  <option>Toyota</option>
+                  <option>Hyunday</option>
+                  <option>Chevrolet</option>
+                  <option>Nissan</option>
+                </select>
+                <p class="text-inf-form">¿No ves tu vehículo en la lista? Envía un correo electrónico a <a href="#">sociosmdv@uber.com</a></p>
+              </div>
+              <div class="form-group">
+                <label for="disabledSelect">Modelo</label>
+                <select id="disabledSelect" class="form-control">
+                  <option>modelo1</option>
+                  <option>modelo2</option>
+                  <option>modelo3</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="disabledSelect">Año</label>
+                <select id="disabledSelect" class="form-control">
+                  <option>2017</option>
+                  <option>2016</option>
+                  <option>2015</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="disabledTextInput">Número de la matrícula</label>
+                <input type="text" id="disabledTextInput" class="form-control" placeholder="Número de la matrícula">
+                <p class="text-inf-form">La información de la matrícula ayuda a los clientes a idenificar tu vehículo</p>
+              </div>
+              <input type="submit" value="Enviar" class="btn-send btn btn-info btn-block">
+            </div><!--/.modal-princi -->
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
   </header>
   <section class="first-section">
     <div class="row">
@@ -96,11 +223,11 @@
         <h4>Consulta las tarifas LabCar aquí</h4>
         <p>
           <img src="assets/images/shape.png">
-          <input class="inp-thirdsection" type="text" name="."> 
+          <input class="inp-thirdsection" type="text" placeholder="Ingrese su punto de partida" name="."> 
         </p>
         <p>
           <img src="assets/images/shape2.png">
-          <input class="inp-thirdsection" type="text" name=".">
+          <input class="inp-thirdsection" type="text" placeholder="Ingrese su destino" name=".">
         </p>
         <button type="button" class="btn-thirdsection btn btn-default">¡TRAZAR RUTA!</button>
       </div>
