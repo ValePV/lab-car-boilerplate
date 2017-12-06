@@ -1,1 +1,143 @@
 /* Los estilos de tu proyecto */
+.header-section{
+	background-image: url(../assets/images/taxi.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	/*height: 100vh;*/
+	padding-bottom: 100px;
+}
+.navbar{
+	margin:0;
+	padding-top: 5px;
+	/*padding-bottom: 10px;*/
+}
+.nav{
+	padding-top: 10px;
+}
+.sub-section{
+	background-color:#f7b617;
+	margin-top: 100px;
+	padding: 50px 30px;
+
+	color: white;
+}
+.logo{
+	width: 14%;
+}
+.btn{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: block;
+}
+.inp-lin{
+	display: inline;
+	width: 100px;
+	background: transparent;
+	border-bottom: 1px solid white;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+.lines{
+	display: inline-block;
+}
+.tex-lin{
+	display: inline-block;
+	margin: 20px 30px;
+}
+.first-section{
+	background-color: #f7b617;
+	padding:40px 0px;
+}
+.frame-firstsection{
+	border:1px solid white;
+	padding:30px;
+	color: white;
+}
+.text-firstsection h4{
+	line-height: 25px;
+	width: 300px;
+	margin-top:20px;
+}
+.text-resp-firstsection{
+	color: white;
+	padding-left: 30px;
+}
+.second-section{
+	background-image: url(../assets/images/conduce.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: white;
+	
+
+}
+.btn-secondsection{
+	background-color: #f7b617;
+	border:1px solid #f7b617;
+	color: white;
+}
+.cont-secondsection{
+	
+}
+.frame-secondsection{
+	padding: 90px 20px 200px 20px;
+	background-color: rgba(0,0,0,0.5);
+
+}
+.frame-secondsection h4{
+	margin-top: 20px;
+	line-height: 30px;
+	width: 350px;
+}
+.third-section{
+	background-color: #f7b617;
+	color: white;
+}
+.frame-thirdsection{
+	padding:20px 0px;
+}
+.text-thirdsection{
+	padding-top: 50px;
+}
+.inp-thirdsection{
+	margin-top: 30px;
+	margin-left: 10px;
+	width: 350px;
+	height: 40px;
+	background-color: #f7b617;
+	border:1px solid white;
+	border-radius: 11%;
+}
+iframe{
+	border:1px solid white;
+	padding:10px;
+}
+.btn-thirdsection{
+	margin-left: 130px;
+}
+footer{
+	background-color: #2b2b2b;
+}
+footer ul{
+	list-style: none;
+}
+footer ul li{
+	color: white;
+	line-height: 30px;
+}
+.img-store{
+	width: 150px;
+	padding: 5px 0;
+}
+.imagenes-footer{
+	padding-top: 130px;
+}
+i{
+	color: white;
+}
+footer p{
+	color: white;
+	padding-bottom: 50px;
+}
